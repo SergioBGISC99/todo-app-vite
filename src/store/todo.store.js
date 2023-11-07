@@ -63,15 +63,15 @@ const deleteCompleted = () => {
 };
 
 /**
- * 
- * @param {Filters} newFilter 
+ *
+ * @param {Filters} newFilter
  */
 const setFilter = (newFilter = Filters.All) => {
   state.filter = newFilter;
 };
 
 const getCurrentFilter = () => {
-  throw new Error("Not implemented");
+  return state.filter;
 };
 
 export default {
