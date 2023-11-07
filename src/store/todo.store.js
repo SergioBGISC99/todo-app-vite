@@ -55,11 +55,11 @@ const toggleTodo = (todoId) => {
 };
 
 const deleteTodo = (todoId) => {
-  throw new Error("Not implemented");
+  state.todos.filter((todo) => todo.id !== todoId);
 };
 
 const deleteCompleted = () => {
-  throw new Error("Not implemented");
+  state.todos.filter((todo) => todo.done);
 };
 
 const setFilter = (newFilter = Filters.All) => {
