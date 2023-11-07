@@ -46,7 +46,8 @@ const getTodos = (filter = Filters.All) => {
  */
 
 const addTodo = (descripcion) => {
-  throw new Error("Not implemented");
+  if (!descripcion) throw new Error("Description is required");
+  state.todos.push(new Todo(descripcion));
 };
 
 const toggleTodo = (todoId) => {
