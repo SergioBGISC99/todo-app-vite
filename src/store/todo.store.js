@@ -62,8 +62,12 @@ const deleteCompleted = () => {
   state.todos.filter((todo) => todo.done);
 };
 
+/**
+ * 
+ * @param {Filters} newFilter 
+ */
 const setFilter = (newFilter = Filters.All) => {
-  throw new Error("Not implemented");
+  state.filter = newFilter;
 };
 
 const getCurrentFilter = () => {
